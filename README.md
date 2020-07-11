@@ -32,10 +32,11 @@ This project is licensed under the terms of the MIT license.
 ## Installation
 This is a Theano/Lasagne implementation in Python for the identification of hundreds of bird species based on their vocalizations. This code is tested using Ubuntu 18.04 LTS but should work with other distributions as well. Python 2 and 3 are supported. See <i>Installation (Docker)</i> to install BirdNET inside a docker container.
 
-1. Clone the repository:
+1. Clone the fork and checkout the `birder_pi` branch:
 
 ```
-git clone https://github.com/kahst/BirdNET.git
+git clone https://github.com/tibroc/BirdNET.git
+git checkout birder_pi
 ```
 
 2. Install requirements:
@@ -62,7 +63,7 @@ sudo apt-get install ffmpeg
 4. Download model snapshot (300 MB):
 
 ```
-sh model/fetch_model.sh
+sh fetch_model.sh
 ```
 
 5. Install Lasagne/Theano:
@@ -165,13 +166,13 @@ BirdNET is an artificial neural network that can detect bird vocalizations in fi
 Analyze all '.wav'-files in a directory:
 
 ```
-python analyze.py --i example/
+python -m birdnet --i example/
 ```
 
 Analyze a single file with known recording location:
 
 ```
-python analyze.py --i example/Soundscape_1.wav --lat 42.479 --lon -76.451
+python -m birdnet --i example/Soundscape_1.wav --lat 42.479 --lon -76.451
 ```
 
 The input arguments include:

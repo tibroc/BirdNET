@@ -1,6 +1,6 @@
 *.pyc
 *.flac
-model/BirdNET_Soundscape_Model.pkl
+birdnet/model/BirdNET_Soundscape_Model.pkl
 .vscode
 datasets/
 venv/

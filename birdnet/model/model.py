@@ -1,6 +1,3 @@
-import sys
-sys.path.append('..')
-
 import os
 import pickle
 import operator
@@ -12,8 +9,8 @@ import theano.tensor as T
 from lasagne import layers as l
 from lasagne import nonlinearities as nl
 
-import config as cfg
-from utils import log
+import birdnet.config as cfg
+from birdnet.utils import log
 
 NONLINEARITY = 'relu'
 FILTERS = [8, 16, 32, 64, 128]

@@ -1,14 +1,12 @@
-import sys
-sys.path.append("..")
-
-import pickle
-import json, gzip
 import datetime
+import gzip
+import json
+import pickle
 
 import numpy as np
 
-import config as cfg
-from utils import log
+import birdnet.config as cfg
+from birdnet.utils import log
 
 ##################### GLOBAL VARS #######################
 GRID = []

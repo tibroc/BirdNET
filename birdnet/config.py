@@ -2,8 +2,8 @@
 # occurrences for a specific location (lat, lon) and one week. An EBIRD_THRESHOLD
 # of 0.02 means that a species must occur on at least 2% of all checklists
 # for a location to be considered plausible.
-EBIRD_SPECIES_CODES = 'metadata/eBird_taxonomy_codes_2018.json'
-EBIRD_MDATA = 'metadata/eBird_grid_data_weekly.gz'
+EBIRD_SPECIES_CODES = 'birdnet/metadata/eBird_taxonomy_codes_2018.json'
+EBIRD_MDATA = 'birdnet/metadata/eBird_grid_data_weekly.gz'
 USE_EBIRD_CHECKLIST = True
 EBIRD_THRESHOLD = 0.02
 DEPLOYMENT_LOCATION = (-1, -1)
